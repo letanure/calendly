@@ -15,7 +15,10 @@ import HelloWorld from './components/HelloWorld.vue'
             Interview call
           </h1>
           <p class="desc">
-            I'm on vacation in Brazil right now, so, please call me on my Brazilian number, if you need to call to a European number, please tell me in advance and I can use the german SIM card (+491724151763) or just call me on WhatsApp
+            I'm on vacation in Brazil right now, so, please call me on my Brazilian number, if you need to call to a European number, please tell me in advance and I can use the german SIM card 
+            <a href="tel:+491724151763">+491724151763</a>
+             or just 
+            <a href="https://wa.me/491724151763">call me on WhatsApp</a>
           </p>
           </div>
         <div class="box-right">
@@ -57,15 +60,21 @@ body>* {
 .container {
   background-color: #fbfcfd;
   display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .area-box{
   flex: 1 1 auto;
+  padding: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-device-width: 480px) { 
+  .area-box{
+    padding: 0;
     margin-top: 66px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+  }
 }
 
 .box{
@@ -75,23 +84,41 @@ body>* {
   display: flex;
   max-width: 800px;
   background: #fff;
+  flex-direction: column;
+}
+@media (min-device-width: 480px) { 
+  .box{
+    flex-direction: row;
+  }
 }
 .box-left{
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  min-width: 300px;
+  transition: all 0.22s ease-out;
+  position: relative;
+  padding: 14px;
+}
+@media (min-device-width: 480px) { 
+  .box-left{
     width: 50%;
-    min-width: 300px;
     border-right: 1px solid var(--text-color-level3, rgba(26, 26, 26, 0.1));
-    transition: all 0.22s ease-out;
-        position: relative;
     padding: 28px;
+  }
 }
 .img {
-          width: 65px;
-    height: 65px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    border: 0;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+@media (min-device-width: 480px) { 
+  .img {
+    margin: 0;
+  }
 }
 .name {
     padding-right: 10px;
@@ -100,6 +127,12 @@ body>* {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+}
+@media (min-device-width: 480px) { 
+  .name {
+    text-align: left;
+  }
 }
 .title {
   padding-right: 10px;
@@ -108,6 +141,12 @@ body>* {
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 24px;
+    text-align: center;
+}
+@media (min-device-width: 480px) { 
+  .title {
+    text-align: left;
+  }
 }
 .title2{
   font-size: 20px;
@@ -121,11 +160,16 @@ body>* {
 }
 .box-right{
   flex: 1 1 50%;
-  width: 50%;
   transition: all 0.22s ease-out;
   display: flex;
   flex-direction: column;
-  padding: 28px;
+  padding: 14px;
+}
+@media (min-device-width: 480px) { 
+  .box-right{
+    padding: 28px;
+    width: 50%;
+  }
 }
 .btn{
   background-color: transparent;
