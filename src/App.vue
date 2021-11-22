@@ -15,10 +15,6 @@ import HelloWorld from './components/HelloWorld.vue'
             Interview call
           </h1>
           <p class="desc">
-            I'm on vacation in Brazil right now, so, please call me on my Brazilian number, if you need to call to a European number, please tell me in advance and I can use the german SIM card 
-            <a href="tel:+491724151763">+491724151763</a>
-             or just 
-            <a href="https://wa.me/491724151763">call me on WhatsApp</a>
           </p>
           </div>
         <div class="box-right">
